@@ -12,6 +12,9 @@
  *
  */
 
+// NORMALIZE CSS
+@import "normalize-rails";
+
 // VARIABLES
 @import "variables";
 
@@ -31,6 +34,11 @@
 @import "components/gallery";
 @import "components/image-box";
 
-// VIEWS
+// LAYOUT
 @import "general";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+// VIEWS
 @import "home";
