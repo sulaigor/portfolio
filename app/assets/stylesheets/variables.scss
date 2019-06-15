@@ -1,0 +1,24 @@
+//
+//    VARIABLES
+
+// debug
+$debug: false;
+
+//body
+$body-width: 100%;
+$main-font: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+$header-font: Modeka, sans-serif;
+
+//main/header width
+$header-width: 15%;
+$main-width: 100% - $header-width;
+$resize: (
+  first: 20%,
+  second: 30%
+);
+
+//colors
+$main-color: #ffee22;
+$main-bg: #000;
+$header-link: #822507;
+$image-border: #ddd;

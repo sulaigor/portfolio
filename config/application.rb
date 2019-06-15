@@ -17,3 +17,6 @@ module Portfolio
     # the framework and any gems in your application.
   end
 end
+
+config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
+config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/

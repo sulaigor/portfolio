@@ -1,0 +1,38 @@
+/* general */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+/* element border */
+/** { outline: 3px solid black; } */
+
+body {
+  max-width: $body-width;
+  margin: 0 auto;
+  padding: 2em 0em;
+  background: $main-bg;
+
+  color: $main-color;
+  font: {
+    size: 100%;
+    family: $main-font;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.active {
+  display: block;
+}

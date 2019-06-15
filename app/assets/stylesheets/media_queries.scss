@@ -1,0 +1,158 @@
+@media (max-width: 1250px) {
+
+  //    body {
+  //        padding-left: 1em;
+  //    }
+
+  //    .header .content {
+  //        img {
+  //            width: 80%;
+  //        }
+  //    }
+
+  //    .header-nav {
+  //        ul {
+  //            padding-left: 1em;
+  //        }
+  //    }
+
+  //    .gallery {
+  //        img {
+  //            width: 30%;
+  //        }
+  //    }
+
+}
+
+@media (max-width: 1090px) {
+
+  .header {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 960px) {
+
+  .header {
+    width: map-get($resize, first);
+    font-size: 85%;
+  }
+
+  .main {
+    width: 100% - map-get($resize, first);
+    margin-left: map-get($resize, first);
+
+  }
+
+  .gallery {
+    img {
+      width: 45%;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+
+  .header {
+    padding-left: 1em;
+
+    .content {
+      font-size: 90%;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+
+  body {
+    padding: 1em;
+  }
+
+  .header {
+    width: 100%;
+    float: none;
+    position: static;
+
+    .content {
+      text-align: center;
+
+      h1 span {
+        display: inline-block;
+      }
+    }
+  }
+
+  .header-nav {
+    text-align: center;
+    margin-bottom: 2em;
+
+    ul {
+      padding-left: 0;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      padding: .2em .8em;
+    }
+
+    li:first-child a {
+      padding-left: 0;
+    }
+
+    li:last-child a {
+      padding-right: 0;
+    }
+  }
+
+  .main {
+    width: 100%;
+    margin-left: 0;
+
+  }
+
+  .gallery {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .header-nav {
+    a {
+      padding: {
+        left: .4em;
+        right: .4em;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+
+  .header-nav {
+    ul {
+      display: none;
+    }
+
+    li {
+      display: block;
+      text-align: left;
+      margin-bottom: .3em;
+      padding-bottom: .3em ;
+
+      border-bottom: 1px solid $main-color;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .menu {
+      display: block;
+    }
+  }
+}

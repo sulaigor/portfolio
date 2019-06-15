@@ -1,0 +1,52 @@
+
+.image-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($main-bg, .7);
+
+  .left,
+  .right {
+    position: fixed;
+    top: 50%;
+    width: 6em;
+    opacity: .6;
+
+    @include transition;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .left {
+    transform: rotate(90deg);
+  }
+
+  .right {
+    transform: rotate(-90deg);
+    right: 0;
+  }
+
+  .inner-img {
+    position: fixed;
+    top: 1em;
+    left: 50%;
+    width: 50em;
+    margin-left: -25em;
+
+    border: 4px solid $image-border;
+    border-radius: .3em;
+  }
+
+  p {
+    position: fixed;
+    text-align: center;
+    left: 25%;
+    bottom: 0;
+  }
+}

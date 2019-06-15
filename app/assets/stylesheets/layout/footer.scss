@@ -1,0 +1,9 @@
+.footer {
+  text-align: center;
+
+  p {
+    font-size: 80%;
+    color: darken($main-color, 30%);
+    //opacity: .7;
+  }
+}
