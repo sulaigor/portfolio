@@ -63,6 +63,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # jQuery JS framework
 gem 'jquery-rails'
+
 # normalize css
 gem 'normalize-rails'
+
+# font awewome css
+gem "font-awesome-rails"
+
 
