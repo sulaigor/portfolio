@@ -2,11 +2,18 @@
 <html>
   <head>
     <title>Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Igor Šula">
+    <meta name="description" content="Martin Burian, fotograf">
+    <link rel="icon" href="<%= asset_path 'general/favicon.ico' %>">
+    <link rel="apple-touch-icon" href="<%= asset_path 'general/apple-touch-icon.png' %>">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: :defer %>
   </head>
   <body class="<%= body_classes %>">
     <%= render 'layouts/header' %>
