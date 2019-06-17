@@ -1,0 +1,30 @@
+body.sign_in {
+  .header {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    margin-left: 0;
+
+    .container {
+      text-align: center;
+    }
+
+    .headline {
+      margin-bottom: 2em;
+    }
+  }
+
+  .go-back-btn {
+    padding: .5em 2em;
+    border: 1px solid $main-color;
+    border-radius: .4em;
+
+    @include transition(.2s);
+
+    &:hover {
+      color: $header-link;
+    }
+  }
+}

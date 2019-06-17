@@ -19,4 +19,10 @@
 
 //= require components/gallery_modal
 //= require components/mobile_menu
+
+//= require about
+//= require contact
+//= require home
+//= require sign_in
+
 //= require_tree .
