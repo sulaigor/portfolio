@@ -6,6 +6,7 @@ body.sign_in {
   .main {
     width: 100%;
     margin-left: 0;
+    padding-left: 0;
 
     .container {
       text-align: center;
@@ -14,17 +15,13 @@ body.sign_in {
     .headline {
       margin-bottom: 2em;
     }
-  }
 
-  .go-back-btn {
-    padding: .5em 2em;
-    border: 1px solid $main-color;
-    border-radius: .4em;
+    .go-back {
+      margin: 2em 0;
+    }
 
-    @include transition(.2s);
-
-    &:hover {
-      color: $header-link;
+    #sign-in_form {
+      margin-bottom: 10em;
     }
   }
 }

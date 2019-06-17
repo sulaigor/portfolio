@@ -1,7 +1,16 @@
 <article class="sign-in container">
-  <h1 class="headline">Sign in to administation</h1>
+  <h1 class="headline">Sign in to administration</h1>
+
+  <% if signed_in? %>
+    Signed in as: <%= current_user.email %>
+    <%= button_to 'Sign out', sign_out_path, method: :delete %>
+  <% else %>
+    <%#= link_to 'Sign in', sign_in_path %>
+    <%= render partial: 'sign_in_form' %>
+  <% end %>
 
   <div class="go-back">
-    <%= link_to 'Main page', root_path, class: 'go-back-btn' %>
+    <%= link_to 'Main page', root_path, class: 'btn' %>
   </div>
+
 </article>

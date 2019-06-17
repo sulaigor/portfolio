@@ -1,0 +1,13 @@
+.btn {
+  padding: .5em 2em;
+  color: $main-color;
+  background-color: $main-bg;
+  border: 1px solid $main-color;
+  border-radius: .4em;
+
+  @include transition(.2s);
+
+  &:hover {
+    color: $header-link;
+  }
+}

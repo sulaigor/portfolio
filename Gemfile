@@ -70,4 +70,4 @@ gem 'normalize-rails'
 # font awewome css
 gem "font-awesome-rails"
 
-
+gem "clearance"
