@@ -1,6 +1,7 @@
 .header {
   width: $header-width;
   position: fixed;
+  top: 1.5em;
   padding-left: 2em;
 
   @include left;

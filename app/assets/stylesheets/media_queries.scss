@@ -41,11 +41,10 @@
   .main {
     width: 100% - map-get($resize, first);
     margin-left: map-get($resize, first);
-
   }
 
   .gallery {
-    img {
+    .gallery-item {
       width: 45%;
     }
   }
@@ -110,11 +109,10 @@
   .main {
     width: 100%;
     margin-left: 0;
-
   }
 
   .gallery {
-    img {
+    .gallery-item {
       width: 100%;
     }
   }

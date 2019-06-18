@@ -1,6 +1,25 @@
 <article class="about-me container">
   <h1 class="headline">About my way</h1>
-  <p class="text">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet autem beatae consectetur excepturi exercitationem explicabo facere id, ipsam neque nesciunt odit porro praesentium rem repellat similique vero voluptas voluptatem!
-  </p>
+  <div class="about-me_article">
+    <h3 class="headline">
+      <span class="name">My first story</span>
+      <span class="date"><strong>2010</strong></span>
+    </h3>
+    <p class="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa dignissimos, dolor eligendi ex ipsum, magni molestias, numquam odio optio quasi qui reiciendis saepe tempore temporibus. Accusantium numquam quaerat voluptatem!
+    </p>
+    <% if signed_in? %>
+      <div class="edit-wrapper">
+        <button class="btn">Edit</button>
+      </div>
+    <% end %>
+  </div>
 </article>
+
+<% if signed_in? %>
+  <div class="add-container">
+    <span class="breakline"></span>
+    <h2 class="headline">Add new about me article here</h2>
+    <span class="breakline"></span>
+  </div>
+<% end %>

@@ -3,28 +3,61 @@
     <a class="image-link" href="<%= asset_path 'general/fotka.jpg' %>">
       <img src="<%= asset_path 'general/fotka.jpg' %>" alt="Popis fotky 1">
     </a>
+    <% if signed_in? %>
+      <div class="edit-wrapper">
+        <button class="btn">Edit</button>
+      </div>
+    <% end %>
   </li>
   <li class="gallery-item">
     <a class="image-link" href="<%= asset_path 'general/fotka2.jpg' %>">
       <img src="<%= asset_path 'general/fotka2.jpg' %>" alt="Popis fotky 2">
     </a>
+    <% if signed_in? %>
+      <div class="edit-wrapper">
+        <button class="btn">Edit</button>
+      </div>
+    <% end %>
   </li>
   <li class="gallery-item">
     <a class="image-link" href="<%= asset_path 'general/fotka3.jpg' %>">
       <img src="<%= asset_path 'general/fotka3.jpg' %>" alt="Popis fotky 3">
     </a>
+    <% if signed_in? %>
+      <div class="edit-wrapper">
+        <button class="btn">Edit</button>
+      </div>
+    <% end %>
   </li>
   <li class="gallery-item">
     <a class="image-link" href="<%= asset_path 'general/fotka4.jpg' %>">
       <img src="<%= asset_path 'general/fotka4.jpg' %>" alt="Popis fotky 4">
     </a>
+    <% if signed_in? %>
+      <div class="edit-wrapper">
+        <button class="btn">Edit</button>
+      </div>
+    <% end %>
   </li>
   <li class="gallery-item">
     <a class="image-link" href="<%= asset_path 'general/fotka5.jpg' %>">
       <img src="<%= asset_path 'general/fotka5.jpg' %>" alt="Popis fotky 5">
     </a>
+    <% if signed_in? %>
+      <div class="edit-wrapper">
+        <button class="btn">Edit</button>
+      </div>
+    <% end %>
   </li>
 </ul>
+
+<% if signed_in? %>
+  <div class="add-container">
+    <span class="breakline"></span>
+    <h2 class="headline">Add new image here</h2>
+    <span class="breakline"></span>
+  </div>
+<% end %>
 
 <div class="image-box">
   <img src="<%= asset_path 'general/arrow.png' %>" alt="Left" class="left">

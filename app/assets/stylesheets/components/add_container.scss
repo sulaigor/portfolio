@@ -1,0 +1,14 @@
+.add-container {
+  margin-top: 5em;
+
+  .headline {
+    padding-left: 3em;
+  }
+
+  .breakline {
+    display: block;
+    height: 4px;
+    background: $main-color;
+    border: none;
+  }
+}

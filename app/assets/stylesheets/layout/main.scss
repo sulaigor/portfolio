@@ -1,8 +1,7 @@
 .main {
   flex-grow: 1;
   width: $main-width;
-
-  padding-left: 4em;
+  padding: 1.5em 4em 0;
   margin: {
     left: $header-width;
     right: 0;

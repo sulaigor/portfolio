@@ -1,3 +1,26 @@
-// Place all the styles related to the about controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.about-me {
+
+  > .headline {
+    margin-bottom: 2em;
+  }
+
+  .about-me_article {
+    position: relative;
+    margin: 2em 0;
+    
+    .headline {
+      display: flex;
+      flex-direction: row;
+      padding: 0 0 .1em 4em;
+      border-bottom: 1px solid $main-color;
+
+      .date {
+        margin-left: 30%;
+      }
+    }
+
+    .edit-wrapper {
+      right: 0;
+    }
+  }
+}

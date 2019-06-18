@@ -1,6 +1,33 @@
 <article class="contact-me container">
   <h1 class="headline">Contact me</h1>
-  <p class="text">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet autem beatae consectetur excepturi exercitationem explicabo facere id, ipsam neque nesciunt odit porro praesentium rem repellat similique vero voluptas voluptatem!
-  </p>
+  <div class="contact">
+    <p class="name">Facebook</p>
+    <a class="social-link btn" href="">
+      <i class="fa fa-facebook"></i>
+    </a>
+    <% if signed_in? %>
+      <div class="edit-wrapper">
+        <button class="btn">Edit</button>
+      </div>
+    <% end %>
+  </div>
+  <div class="contact">
+    <p class="name">Instagram</p>
+    <a class="social-link btn" href="">
+      <i class="fa fa-instagram"></i>
+    </a>
+    <% if signed_in? %>
+      <div class="edit-wrapper">
+        <button class="btn">Edit</button>
+      </div>
+    <% end %>
+  </div>
 </article>
+
+<% if signed_in? %>
+  <div class="add-container">
+    <span class="breakline"></span>
+    <h2 class="headline">Add new contact here</h2>
+    <span class="breakline"></span>
+  </div>
+<% end %>

@@ -1,9 +1,11 @@
 .footer {
   text-align: center;
 
-  p {
-    font-size: 80%;
+  .post-footer {
+    font-size: 75%;
+    margin: 0;
+    padding: 1em 0;
+    background: darken($main-bg, 5%);
     color: darken($main-color, 30%);
-    //opacity: .7;
   }
 }
