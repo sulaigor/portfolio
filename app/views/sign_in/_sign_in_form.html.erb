@@ -1,7 +1,7 @@
 <%= form_for :session, url: session_path, html: { id: 'sign-in_form', class: 'form' } do |form| %>
   <div class="text-field form-item">
     <%= form.label :email %>
-    <%= form.text_field :email, type: 'email', class: 'input' %>
+    <%= form.text_field :email, type: 'email', value: @admin_user.email, class: 'input' %>
   </div>
 
   <div class="password-field form-item">
@@ -13,7 +13,4 @@
     <%= form.submit 'Sign in', class: 'btn' %>
   </div>
 
-<!--  <div class="other-links form-item">-->
-    <%#= link_to t(".forgot_password"), new_password_path, class: 'btn' %>
-<!--  </div>-->
 <% end %>

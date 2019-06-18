@@ -2,24 +2,25 @@
   width: 100%;
   text-align: center;
 
-  a {
+  .gallery-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 .5em .5em 0;
+  }
 
+  a {
+    display: block;
+    width: 100%;
+    border: 1px solid $main-color;
   }
 
   img {
-    //width: 22.5%;
-    width: 30%;
     padding: 0;
-    margin: {
-      right: .4em;
-      bottom: .6em;
-    }
 
-    transition: all .4s ease;
+    @include transition;
 
     &:hover,
     &:focus {
-      //opacity: 1;
       transform: scale(1.025);
     }
   }

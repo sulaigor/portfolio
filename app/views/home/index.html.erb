@@ -1,29 +1,35 @@
-<div class="gallery">
-  <a href="img/fotka.jpg"><img src="img/fotka.jpg" alt="Popis fotky 1"></a>
-  <a href="img/fotka2.jpg"><img src="img/fotka2.jpg" alt="Popis fotky 2"></a>
-  <a href="img/fotka3.jpg"><img src="img/fotka3.jpg" alt="Popis fotky 3"></a>
-  <a href="img/fotka4.jpg"><img src="img/fotka4.jpg" alt="Popis fotky 4"></a>
-  <a href="img/fotka5.jpg"><img src="img/fotka5.jpg" alt="Popis fotky 5"></a>
-  <a href="img/fotka.jpg"><img src="img/fotka.jpg" alt="Popis fotky 6"></a>
-  <a href="img/fotka2.jpg"><img src="img/fotka2.jpg" alt="Popis fotky 7"></a>
-  <a href="img/fotka3.jpg"><img src="img/fotka3.jpg" alt="Popis fotky 8"></a>
-  <a href="img/fotka4.jpg"><img src="img/fotka4.jpg" alt="Popis fotky 9"></a>
-  <a href="img/fotka5.jpg"><img src="img/fotka5.jpg" alt="Popis fotky 10"></a>
-  <a href="img/fotka.jpg"><img src="img/fotka.jpg" alt="Popis fotky 11"></a>
-  <a href="img/fotka2.jpg"><img src="img/fotka2.jpg" alt="Popis fotky 12"></a>
-  <a href="img/fotka3.jpg"><img src="img/fotka3.jpg" alt="Popis fotky 13"></a>
-  <a href="img/fotka4.jpg"><img src="img/fotka4.jpg" alt="Popis fotky 14"></a>
-  <a href="img/fotka5.jpg"><img src="img/fotka5.jpg" alt="Popis fotky 15"></a>
-  <a href="img/fotka.jpg"><img src="img/fotka.jpg" alt="Popis fotky 16"></a>
-  <a href="img/fotka2.jpg"><img src="img/fotka2.jpg" alt="Popis fotky 17"></a>
-  <a href="img/fotka3.jpg"><img src="img/fotka3.jpg" alt="Popis fotky 18"></a>
-  <a href="img/fotka4.jpg"><img src="img/fotka4.jpg" alt="Popis fotky 19"></a>
-  <a href="img/fotka5.jpg"><img src="img/fotka5.jpg" alt="Popis fotky 20"></a>
-</div>
+<ul class="gallery">
+  <li class="gallery-item">
+    <a class="image-link" href="<%= asset_path 'general/fotka.jpg' %>">
+      <img src="<%= asset_path 'general/fotka.jpg' %>" alt="Popis fotky 1">
+    </a>
+  </li>
+  <li class="gallery-item">
+    <a class="image-link" href="<%= asset_path 'general/fotka2.jpg' %>">
+      <img src="<%= asset_path 'general/fotka2.jpg' %>" alt="Popis fotky 2">
+    </a>
+  </li>
+  <li class="gallery-item">
+    <a class="image-link" href="<%= asset_path 'general/fotka3.jpg' %>">
+      <img src="<%= asset_path 'general/fotka3.jpg' %>" alt="Popis fotky 3">
+    </a>
+  </li>
+  <li class="gallery-item">
+    <a class="image-link" href="<%= asset_path 'general/fotka4.jpg' %>">
+      <img src="<%= asset_path 'general/fotka4.jpg' %>" alt="Popis fotky 4">
+    </a>
+  </li>
+  <li class="gallery-item">
+    <a class="image-link" href="<%= asset_path 'general/fotka5.jpg' %>">
+      <img src="<%= asset_path 'general/fotka5.jpg' %>" alt="Popis fotky 5">
+    </a>
+  </li>
+</ul>
 
 <div class="image-box">
   <img src="<%= asset_path 'general/arrow.png' %>" alt="Left" class="left">
   <img src="<%= asset_path 'general/arrow.png' %>" alt="Right" class="right">
   <img src="" alt="" class="inner-img">
-  <p></p>
+  <p class="image-text"></p>
+  <button id="galerry-modal-close-btn" class="close-btn">X</button>
 </div>

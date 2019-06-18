@@ -34,7 +34,7 @@
 
   .inner-img {
     position: fixed;
-    top: 1em;
+    top: 10em;
     left: 50%;
     width: 50em;
     margin-left: -25em;
@@ -43,10 +43,31 @@
     border-radius: .3em;
   }
 
-  p {
+  .image-text {
     position: fixed;
     text-align: center;
     left: 25%;
-    bottom: 0;
+    bottom: 20%;
+  }
+
+  .close-btn {
+    font-size: 2em;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 2em;
+    height: 2em;
+    line-height: 1.8em;
+    text-align: center;
+    color: $main-color;
+    background: none;
+    border: 2px solid $main-color;
+    border-radius: 50%;
+
+    @include transition(.2s);
+
+    &:hover {
+      color: $header-link;
+    }
   }
 }
