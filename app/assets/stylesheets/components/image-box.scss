@@ -13,6 +13,7 @@
     top: 50%;
     width: 6em;
     opacity: .6;
+    cursor: pointer;
 
     @include transition;
 
@@ -62,6 +63,7 @@
     background: none;
     border: 2px solid $main-color;
     border-radius: 50%;
+    cursor: pointer;
 
     @include transition(.2s);
 
