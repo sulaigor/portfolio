@@ -1,5 +1,20 @@
 <article class="contact-me container">
   <h1 class="headline">Contact me</h1>
+
+  <% @contacts.each do |contact| %>
+    <div class="contact">
+      <p class="name"><%= contact.social_name %>></p>
+      <a class="social-link btn" href="<%= contact.url %>">
+        <i class="fa <%= contact.social_icon %>>"></i>
+      </a>
+      <% if signed_in? %>
+        <div class="edit-wrapper">
+          <button class="btn">Edit</button>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
   <div class="contact">
     <p class="name">Facebook</p>
     <a class="social-link btn" href="">

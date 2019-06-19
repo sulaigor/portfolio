@@ -16,7 +16,7 @@ function nextImage(clickedLink) {
   imageBox.find('.image-text').text(alt);
 }
 
-closeBtn.addEventListener('click', event => document.querySelector('.image-box').classList.remove('active'));
+if(closeBtn) closeBtn.addEventListener('click', event => document.querySelector('.image-box').classList.remove('active'));
 
 gallery.find('.image-link').on('click', function(event) {
   event.preventDefault();

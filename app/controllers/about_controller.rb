@@ -1,7 +1,7 @@
 class AboutController < ApplicationController
 
   def index
-
+    @about_articles = AboutArticle.all
   end
 
   def create
