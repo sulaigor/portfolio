@@ -6,12 +6,13 @@ html { box-sizing: border-box; }
 /** { outline: 3px solid black; } */
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: $body-width;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0;
+  padding: 5px 5px 0 0;
   background: $main-bg;
 
   color: $main-color;
@@ -34,6 +35,10 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+form {
+  display: inline-block;
 }
 
 .active {

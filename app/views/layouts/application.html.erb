@@ -16,6 +16,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: :defer %>
   </head>
   <body class="<%= body_classes %>">
+
+    <% if signed_in? %>
+      <%= button_to 'Sign out', sign_out_path, method: :delete, class: 'btn pull-right' %>
+    <% end %>
     <%= render 'layouts/header' %>
 
     <main class="main">
