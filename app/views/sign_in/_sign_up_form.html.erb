@@ -1,4 +1,4 @@
-<%= form_for :users, url: users_path, method: :post, html: { id: 'sign-up_form', class: 'form' } do |form| %>
+<%= form_for @user, html: { id: 'sign-up_form', class: 'form' } do |form| %>
   <div class="text-field form-item">
     <%= form.label :email %>
     <%= form.text_field :email, type: 'email', class: 'input' %>

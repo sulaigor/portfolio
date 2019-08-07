@@ -9,14 +9,13 @@ Rails.application.routes.draw do
       only: [:create, :edit, :update]
   end
 
-  get "/sign_in" => "clearance/sessions#new", as: "sign_in"
-  delete "/sign_out" => "clearance/sessions#destroy", as: "sign_out"
-  get "/sign_up" => "clearance/users#new", as: "sign_up"
+  get "/sign_in" => "sessions#new", as: "sign_in"
+  delete "/sign_out" => "sessions#destroy", as: "sign_out"
+  get "/sign_up" => "users#new", as: "sign_up"
 
   root 'home#index'
   get 'contact-me', to: 'contact#index', as: 'contact_me'
   get 'sign-in', to: 'sign_in#index', as: 'admin_sign_in'
   get 'about-me', to: 'about#index', as: 'about_me'
 
-  # post
 end
