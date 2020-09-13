@@ -1,0 +1,8 @@
+<%= form_for @article, html: { class: 'form' } do |form| %>
+  <% @article.keys.each do |col| %>
+    <div class="text-field form-item">
+      <%= form.label col, class: 'label' %>
+      <%= form.text_field col, type: 'text', class: 'input' %>
+    </div>
+  <% end %>
+<% end %>

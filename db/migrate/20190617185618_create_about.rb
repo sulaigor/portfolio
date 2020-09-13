@@ -1,6 +1,6 @@
 class CreateAboutArticles < ActiveRecord::Migration[5.2]
   def change
-    create_table :about_articles do |t|
+    create_table :abouts do |t|
 
       t.string :article_name, null: false
       t.text :article_text, null: false

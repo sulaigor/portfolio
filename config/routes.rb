@@ -18,4 +18,6 @@ Rails.application.routes.draw do
   get 'sign-in', to: 'sign_in#index', as: 'admin_sign_in'
   get 'about-me', to: 'about#index', as: 'about_me'
 
+  resources :abouts
+
 end
